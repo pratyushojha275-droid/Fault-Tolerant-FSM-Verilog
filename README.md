@@ -25,10 +25,11 @@ This project implements a fault-tolerant finite state machine (FSM) using Hammin
 ## Architecture
 The system consists of:
 
-FSM Core – Implements the original state transition logic  
-Error Injection Module – Simulates bit-flip faults in the state register  
-Hamming Distance Module – Computes distance between possible states  
-Correction Module – Maps invalid states to the nearest valid state  
+fsm_core Module – Implements the original state transition logic  
+error_insertion Module – Simulates bit-flip faults in the state register  
+hamming_distance Module – Computes distance between possible states  
+correction Module – Maps invalid states to the nearest valid state
+fsm_top Module - all modules are instantiated here
 
 ## Fault Tolerance Principle
 Valid states are encoded such that:
